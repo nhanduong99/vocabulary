@@ -35,5 +35,20 @@ namespace VocabulariesOfEconomics.Controllers
         {
             return PartialView("Partial/_ListVoca", await _vocabularyRepository.GetListVoca(model));
         }
+        [HttpPost, Route("home/get-list-voca-details")]
+        public IActionResult GetListVocaDetails([FromBody] VocabularyQueryModel model)
+        {
+            return Ok(_vocabularyRepository.GetVocaDetails(model));
+        }
+        [HttpPost, Route("home/update-voca")]
+        public IActionResult UpdateVoca([FromBody] VocabularyModel model)
+        {
+            return Ok(_vocabularyRepository.UpdateVoca(model));
+        }
+        [HttpPost, Route("home/add-voca")]
+        public IActionResult AddVoca([FromBody] VocabularyModel model)
+        {
+            return Ok(_vocabularyRepository.AddVoca(model));
+        }
     }
 }

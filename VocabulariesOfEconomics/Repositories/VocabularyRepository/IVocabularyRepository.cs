@@ -13,5 +13,8 @@ namespace VocabulariesOfEconomics.Repositories.VocabularyRepository
     {
         IDbConnection CreateConnection();
         Task<IEnumerable<VocabularyModel>> GetListVoca(VocabularyQueryModel model);
+        VocabularyModel GetVocaDetails(VocabularyQueryModel model);
+        int UpdateVoca(VocabularyModel model);
+        int AddVoca(VocabularyModel model);
     }
 }

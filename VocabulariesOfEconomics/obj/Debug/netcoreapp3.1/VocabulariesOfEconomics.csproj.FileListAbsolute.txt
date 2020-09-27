@@ -45,3 +45,4 @@ C:\Users\nhana\OneDrive\Máy tính\Vocabulary\VocabulariesOfEconomics\Vocabulari
 C:\Users\nhana\OneDrive\Máy tính\Vocabulary\VocabulariesOfEconomics\VocabulariesOfEconomics\obj\Debug\netcoreapp3.1\VocabulariesOfEconomics.dll
 C:\Users\nhana\OneDrive\Máy tính\Vocabulary\VocabulariesOfEconomics\VocabulariesOfEconomics\obj\Debug\netcoreapp3.1\VocabulariesOfEconomics.pdb
 C:\Users\nhana\OneDrive\Máy tính\Vocabulary\VocabulariesOfEconomics\VocabulariesOfEconomics\obj\Debug\netcoreapp3.1\VocabulariesOfEconomics.genruntimeconfig.cache
+C:\Users\nhana\OneDrive\Máy tính\Vocabulary\VocabulariesOfEconomics\VocabulariesOfEconomics\obj\Debug\netcoreapp3.1\VocabulariesOfEconomics.csprojAssemblyReference.cache

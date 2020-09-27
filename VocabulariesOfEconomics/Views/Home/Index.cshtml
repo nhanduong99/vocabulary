@@ -59,6 +59,7 @@
                                             <div class="d-flex align-items-center">
                                                 <select class="form-control" id="FilterBy" name="FilterBy">
                                                     <option value="">Search by</option>
+                                                    <option value="WORD">Word</option>
                                                     <option value="ENGLISH">English</option>
                                                     <option value="VIETNAMESE">Vietnamese</option>
                                                 </select>
@@ -67,7 +68,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-xl-4 mt-5 mt-lg-0">
-                                    <button href="#" class="btn btn-secondary mr-2"><i class="icon-md la la-close"></i>Clear</button>
+                                    <button onclick="window.location.reload();" class="btn btn-secondary mr-2"><i class="icon-md la la-close"></i>Clear</button>
                                     <button type="button" id="btnVocaEconomicsSearchList" class="btn btn-light-primary px-6 font-weight-bold"><i class="icon-md la la-search"></i> Search</button>
                                 </div>
                             </div>
@@ -91,13 +92,31 @@
         </div>
     </div>
 </div>
-
+<style>
+    swal-footer {
+        text-align: center;
+    }
+</style>
 @await Html.PartialAsync("_EditPopup")
 @await Html.PartialAsync("_AddPopup")
 @await Html.PartialAsync("_DetailPopup")
 @section Scripts{
     <script src="~/js/site.js" asp-append-version="false"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript">
+
+        $(document).on('click', 'a[name="vocaDetails"]', function () {
+            VocaEconomicsRepository.getDetails($(this).attr("data-id"));
+        })
+        $(document).on('click', 'a[name="vocaEdit"]', function () {
+            VocaEconomicsRepository.getEdit($(this).attr("data-id"));
+        })
+        $("#btnAddVoca").click(function () {
+            VocaEconomicsRepository.AddVoca();
+        })
+        $("#btnEditVoca").click(function () {
+            VocaEconomicsRepository.UpdateVoca();
+        })
         jQuery(document).ready(function () {
             VocaEconomicsRepository.init();
             VocaEconomicsRepository.loadListVoca();
