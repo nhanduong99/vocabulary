@@ -15,3 +15,8 @@ TestResult.xml
 Version.cs
 Version.h
 Version.cpp
+.vs/VocabulariesOfEconomics/v16/.suo
+VocabulariesOfEconomics/obj/Debug/netcoreapp3.1/VocabulariesOfEconomics.assets.cache
+VocabulariesOfEconomics/obj/Debug/netcoreapp3.1/VocabulariesOfEconomics.csproj.FileListAbsolute.txt
+*.dll
+*.cache
