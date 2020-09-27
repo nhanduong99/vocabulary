@@ -1,0 +1,110 @@
+/*.header-fixed.subheader-fixed.subheader-enabled .wrapper {*/
+/*    padding-top: 65px;*/
+/*}*/
+/*.border-right-fix {*/
+/*    border-right: 1px solid #DAE9E9;*/
+/*}*/
+/*.padding-right-fix {*/
+/*    padding-right: 50px;*/
+/*}*/
+/*.fix-icon-button::after {*/
+/*    content: '' !important;*/
+/*}*/
+/*.highcharts-button {*/
+/*    display: none !important;*/
+/*}*/
+/*.border-bottom-fix {*/
+/*    padding-bottom: 2px;*/
+/*    border-bottom: 1px solid;*/
+/*}*/
+/*.select-width-full {*/
+/*    width: 100% !important;*/
+/*}*/
+/*.select-full .select2-container {*/
+/*    width: 100% !important;*/
+/*}*/
+/*.checkbox span {*/
+/*    margin-top: -18px;*/
+/*}*/
+
+/*.highcharts-data-table table {*/
+/*    font-family: Verdana, sans-serif;*/
+/*    border-collapse: collapse;*/
+/*    border: 1px solid #EBEBEB;*/
+/*    margin: 10px auto;*/
+/*    text-align: center;*/
+/*    width: 100%;*/
+/*    max-width: 500px;*/
+/*}*/
+/*.highcharts-data-table caption {*/
+/*    padding: 1em 0;*/
+/*    font-size: 1.2em;*/
+/*    color: #555;*/
+/*}*/
+/*.highcharts-data-table th {*/
+/*    font-weight: 600;*/
+/*    padding: 0.5em;*/
+/*}*/
+/*.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {*/
+/*    padding: 0.5em;*/
+/*}*/
+/*.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {*/
+/*    background: #f8f8f8;*/
+/*}*/
+/*.highcharts-data-table tr:hover {*/
+/*    background: #f1f7ff;*/
+/*}*/
+
+
+/*.highcharts-color-0 {*/
+/*    fill: #7cb5ec;*/
+/*    stroke: #7cb5ec;*/
+/*}*/
+/*.highcharts-axis.highcharts-color-0 .highcharts-axis-line {*/
+/*    stroke: #7cb5ec;*/
+/*}*/
+/*.highcharts-axis.highcharts-color-0 text {*/
+/*    fill: #7cb5ec;*/
+/*}*/
+/*.highcharts-color-1 {*/
+/*    fill: #90ed7d;*/
+/*    stroke: #90ed7d;*/
+/*}*/
+/*.highcharts-axis.highcharts-color-1 .highcharts-axis-line {*/
+/*    stroke: #90ed7d;*/
+/*}*/
+/*.highcharts-axis.highcharts-color-1 text {*/
+/*    fill: #90ed7d;*/
+/*}*/
+
+
+/*.highcharts-yaxis .highcharts-axis-line {*/
+/*    stroke-width: 2px;*/
+/*}*/
+
+.checkbox-fix {
+    position: relative !important;
+}
+span.select2 {
+    width: 100% !important;
+}
+span.select2 input {
+    width: auto !important;
+}
+td , th {
+    vertical-align: inherit !important;
+}
+#kt_aside_menu .menu-item svg , #kt_aside_menu .menu-item svg path{
+     width: 25px;
+     height: 25px;
+     margin-right: 10px;
+     fill: #494b74 !important;
+ }
+#kt_aside_menu .menu-item:hover svg , #kt_aside_menu .menu-item:hover svg path {
+    fill: #3699FF !important;
+}
+#kt_aside_menu .menu-item .menu-link {
+    display: flex!important;
+    align-items : center!important;
+    -webkit-box-align : center!important;
+}

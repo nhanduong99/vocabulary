@@ -1,0 +1,50 @@
+﻿@model IEnumerable<VocabulariesOfEconomics.Models.VocabularyModel>
+    <div class="table-responsive" id="tblVoca">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>English</th>
+                    <th>Vietnamese</th>
+                    <th>Spelling</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    @foreach (var item in Model)
+                    {
+                <tr>
+                    <td>@item.ID</td>
+                    <td>@item.ENGLISH</td>
+                    <td>@item.VIETNAMESE</td>
+                    <td>@item.SPELLING</td>
+                    <td>
+                        <div class="dropdown dropdown-inline">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
+                                <ul class="navi flex-column navi-hover py-2">
+                                    <li class="navi-item">
+                                        <a href="javascript:void(0)" class="navi-link" data-toggle="modal" data-target="#DetailPopup">
+                                            <span class="navi-icon"><i class="icon-md la la-eye pr-2"></i></span>
+                                            <span class="navi-text">Detail</span>
+                                        </a>
+                                    </li>
+                                    <li class="navi-item">
+                                        <a href="javascript:void(0)" class="navi-link" data-toggle="modal" data-target="#EditPopup">
+                                            <span class="navi-icon"><i class="icon-md la la-edit pr-2"></i></span>
+                                            <span class="navi-text">Edit</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                    }
+                }
+
+            </tbody>
+        </table>
+    </div>
