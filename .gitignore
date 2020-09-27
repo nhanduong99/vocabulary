@@ -340,5 +340,3 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
-src/WaterBilling.Web/appsettings.json
-src/WaterBilling.Web/Tenant.json
